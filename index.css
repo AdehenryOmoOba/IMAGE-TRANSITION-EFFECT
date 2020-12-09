@@ -1,0 +1,55 @@
+.title {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.left-image-container {
+  height: 400px;
+  width: 600px;
+  position: relative;
+}
+.left-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.top-image {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.top-image:hover {
+  opacity: 1;
+}
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.right-image-container {
+  height: 400px;
+  width: 600px;
+  position: relative;
+}
+.right-image-container img {
+  height: 100%;
+  width: 100%;
+}
+.fade::after {
+  content: "We Love Lagos...";
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-size: 40px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade:hover::after {
+  opacity: 0.5;
+}
